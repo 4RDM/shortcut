@@ -33,7 +33,7 @@ func main() {
 	userprofile := os.Getenv("userprofile")
 	buffer := fmt.Sprintf("[InternetShortcut]\nURL=fivem://connect/4rdm.cf\nIconIndex=0\nHotKey=0\nIDList=\nIconFile=%s\\4RDM\\4rdmlogo.ico\n[{000214A0-0000-0000-C000-000000000046}]\nProp3=19,0\n", userprofile)
 
-	response, err := http.Get("https://4rdm.pl/assets/logo.ico")
+	response, err := http.Get("https://4rdm.pl/public/assets/logo.ico")
 	if err != nil {
 		panic(err)
 	}
